@@ -1,0 +1,7 @@
+
+"""it is necessary for Each toy car needs 4 wheels, 1 car body, and 2 figures of people to be placed inside.then calculate at least how many toy car producible."""
+def toy_car(a, b, c):
+    x=a//4
+    y=b//1
+    z=c//2
+    return min(x,y,z)

@@ -1,0 +1,31 @@
+def reorder_digits(lst, direction):
+    b=""
+    new=[]
+    last_lst=[]
+    if direction=="asc":
+        for i in lst:
+            a = str(i)
+            count=0
+            for j in sorted(a):
+                b +=j
+                count+=1
+                if count ==len(a):
+                    b+= " "
+        new = b.split(" ")
+    
+    elif direction=="desc":
+        for i in lst:
+            a = str(i)
+            count=0
+            for j in sorted(a, reverse=True):
+                b +=j
+                count+=1
+                if count ==len(a):
+                    b+= " "
+        new = b.split(" ")
+    for i in new:
+        if i != "":
+            a=int(i)
+            last_lst.append(a)
+        
+    return last_lst

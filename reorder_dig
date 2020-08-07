@@ -1,0 +1,8 @@
+def reorder_digit(lst, direction):
+    new=[]
+    for i in lst:
+        if direction=="asc":
+            new.append(int("".join(sorted(str(i)))))
+        elif direction=="desc":
+            new.append(int("".join(sorted(str(i),reverse=True)))) 
+    return new
