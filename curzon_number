@@ -1,0 +1,7 @@
+def curzon(num):
+    a=2**num + 1
+    b=2*num + 1
+    if a%b==0:
+        print(f"{num} is a curzon number.")
+    else:
+        print(f"{num} is not a curzon number.")
