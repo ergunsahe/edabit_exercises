@@ -1,0 +1,9 @@
+"""Create a function that returns a list of strings sorted by length in ascending order. sort_by_length(["a", "ccc", "dddd", "bb"]) ➞ ["a", "bb", "ccc", "dddd"]"""
+def by_length(a):
+    srt_list=[]
+    srt_dict={}
+    for i in a:
+        srt_dict[len(i)]= i
+    for i in sorted(srt_dict):
+        srt_list.append(srt_dict[i])
+    return srt_list
