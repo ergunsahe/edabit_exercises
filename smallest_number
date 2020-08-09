@@ -1,0 +1,6 @@
+"""to find in a list but it compares with given another number.==>smallest([7, 3, 5, 2], 2) ==>3
+def smallest(lst, n):
+    if n <=len(lst)-1:
+        return lst[n-1]
+    else:
+        None
