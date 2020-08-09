@@ -1,0 +1,8 @@
+"""given a number to calculate and make a list with given another nummber times"""
+def list_of_multiples (num, length):
+    list_mul=[]
+    a=0
+    for i in range(length):
+        a += num
+        list_mul.append(a)
+    return list_mul
