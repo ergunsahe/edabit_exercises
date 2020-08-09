@@ -1,0 +1,6 @@
+""" This is to calculate a number in range 0 to number. For example 5==>15, 12==>78"""
+def sum_numbers(number):
+    if number == 1:
+        return number
+    else:
+        return number + (sum_numbers(number-1))
