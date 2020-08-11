@@ -1,0 +1,7 @@
+def check_square_and_cube(lst):
+    a=lst[0]**0.5
+    b=a**3
+    if b == lst[1]:
+        return True
+    else: 
+        return False
