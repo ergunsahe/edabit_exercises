@@ -1,0 +1,8 @@
+def invert(dct):
+    a=[]
+    b=[]
+    for i in dct.keys():
+        a.append(i)
+    for j in dct.values():
+        b.append(j)
+    return dict(zip(b, a))
