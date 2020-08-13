@@ -1,0 +1,7 @@
+def grade_percentage(user_score, pass_score):
+    s=''
+    if int(user_score[0:len(user_score)-1])<int(pass_score[0:len(pass_score)-1]) :
+        s +='FAILED'
+    elif int(user_score[0:len(user_score)-1])>=int(pass_score[0:len(pass_score)-1]) :
+        s +='PASSED'
+    return 'You'+' '+s+' '+'the Exam'
