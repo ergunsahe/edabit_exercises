@@ -1,0 +1,13 @@
+def tallest_skyscraper(lst):
+    a=[]
+    b=0
+    for i in range(len(lst[0])):
+        c=0
+        d=0        
+        for i in lst:
+            c += i[b]
+            d +=1
+            if d==len(lst):
+                a.append(c)
+                b+=1
+    return max(a)
