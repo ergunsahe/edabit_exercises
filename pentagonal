@@ -1,0 +1,8 @@
+def pentagonal(num):
+    a=0
+    if num == 1:
+        return num
+    while num>1:
+        a+=(num-1)*5
+        num-=1
+    return a + 1
